@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style-reservation.css">
+</head>
+
+<form method="post" action="php/reservation-insert.php" >
+    <div>
+        <fieldset >
+            <legend >Réservation</legend>
+            <p>
+                Nom <input name="nom" type="text" required>
+            </p>
+            <p>
+                Prénom <input name="prenom" type="text" required>
+            </p>
+            <p>
+                E-mail <input name="email" type="email" required>
+            </p>
+            <p>
+                Choisissez la date et l'heure<input name="datetime" type="datetime-local" step="1800" required>
+            </p>
+            <p>      
+                Combien de personne? : 
+                <select id="nombre" name="nombre" required>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" name="valid_form" value="Réserver">
+            </p>
+        </fieldset>
+    </div>
+
+</form>
+<body>
+    
+</body>
+</html>
